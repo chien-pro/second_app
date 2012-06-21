@@ -1,5 +1,8 @@
 SecondApp::Application.routes.draw do
 
+  resources :users
+
+  get "users/show"
   get "users/new"
   get "static_pages/home"
   get "home/index"
